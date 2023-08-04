@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #f6ea41, #f048c6);
+    padding: 10px;
+    
+}
+.todo-app{
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 20px;
+    margin: 80px auto 20px;
+    padding: 40px 30px 70px;
+    color: #f048c6;
+    font-weight: 540;
+}
+
+
+.todo-app h1{
+
+   color: #f048c6;
+   display: flex; 
+   align-items: center;
+   margin-bottom: 20px;
+   margin-left: 35%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(244, 252, 173);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    
+}
+
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    
+}
+
+button{
+    border: none;
+    outline: none;   
+    padding: 16px 30px;
+    background: #f048c6;
+    color: #f6ea41;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    user-select: none;
+
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 9px 8px 12px 45px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50% ;
+    background-image: url(images/pinkUncheckedLogo.png);
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+    left: 8px;
+
+}
+
+ul li.checked{
+    color: #f048c6 ;
+    text-decoration: line-through ;
+}
+
+ul li.checked::before{
+    background-image: url(images/pinkCheckedLogo.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    color: #f048c6;
+    line-height:35px;
+    text-align: center;
+    border-radius: 50%;
+     
+}
+
+ul li span:hover{
+
+    background: rgb(244, 252, 173);
+}
+
+.completedTasks{
+
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 20px;
+    margin: 40px auto 20px;
+    color: #f048c6;
+    display: flex;
+}
+.completedTasks h1{
+
+    color: #f048c6;
+    display: flex; 
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: 22%;
+    
+ }
